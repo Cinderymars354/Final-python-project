@@ -85,7 +85,7 @@ df = pd.DataFrame({
 
 })
 
-fig = px.bar(df, x="article", y="lines counted")
+fig = px.bar(df, x="article", y="p tags counted")
 
 
 app.layout = html.Div(children=[
