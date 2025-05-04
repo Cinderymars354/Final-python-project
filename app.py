@@ -31,7 +31,7 @@ don = BeautifulSoup(resull.text, "html.parser")
 
 doc = BeautifulSoup(result.text, "html.parser")
 
-# Finding all tags with text, usually under the tag "p"
+# Finding tags with text
 
 articla = dob.find_all("p")
 
