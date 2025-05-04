@@ -81,7 +81,7 @@ for line in c:
 # Making the graphs
 df = pd.DataFrame({
     "article": ['cranberry', 'art', 'orange'],
-    "lines counted": [i, o, s]
+    "p tags counted": [i, o, s]
 
 })
 
@@ -115,11 +115,11 @@ app.layout = html.Div(children=[
 )
 def update_graph(selected_graph):
     if selected_graph == 'bar':
-        fig = px.bar(df, x='article', y='lines counted', title="Amount of p tags counted in articles")
+        fig = px.bar(df, x='article', y='p tags counted', title="Amount of p tags counted in articles")
     elif selected_graph == 'scatter':
         fig = px.scatter(df, x='article', y='lines counted', color='article', size='lines counted', title="Amount of p tags counted in articles")
     elif selected_graph == 'pie':
-        fig = px.pie(df, values="lines counted", names="article", title="Amount of p tags counted in articles")
+        fig = px.pie(df, values="p tags counted", names="article", title="Amount of p tags counted in articles")
     return fig
 
 
