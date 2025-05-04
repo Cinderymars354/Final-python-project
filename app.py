@@ -117,7 +117,7 @@ def update_graph(selected_graph):
     if selected_graph == 'bar':
         fig = px.bar(df, x='article', y='p tags counted', title="Amount of p tags counted in articles")
     elif selected_graph == 'scatter':
-        fig = px.scatter(df, x='article', y='lines counted', color='article', size='lines counted', title="Amount of p tags counted in articles")
+        fig = px.scatter(df, x='article', y='p tags counted', color='article', size='p tags counted', title="Amount of p tags counted in articles")
     elif selected_graph == 'pie':
         fig = px.pie(df, values="p tags counted", names="article", title="Amount of p tags counted in articles")
     return fig
